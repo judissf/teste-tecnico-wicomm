@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import intro  from '../../assets/intro.png'
 
 export const HomeStyle = styled.main`
   display: flex;
@@ -18,7 +19,7 @@ export const HomeStyle = styled.main`
     padding-left: 155px;
     padding-top: 130px;
     margin-bottom: 56px;
-    background-image: url('src/assets/intro.png');
+    background-image: url(${intro});
     background-size: contain;
     background-size: 1280px 548px;
 
