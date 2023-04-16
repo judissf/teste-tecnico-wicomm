@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import intro  from '../../assets/intro.png'
+import background_athletes from '../../assets/background_athletes.png'
+import background_about_us from '../../assets/background_about_us.png'
 
 export const HomeStyle = styled.main`
   display: flex;
-  /* position: relative; */
   flex-direction: column;
   max-width: 1280px;
   width: 100%;
@@ -134,7 +135,7 @@ export const HomeStyle = styled.main`
     align-items: flex-start;
     width: 100%;
     height: 461px;
-    background-image: url('src/assets/background_athletes.png');
+    background-image: url(${background_athletes});
     padding-top: 40px;
     margin-bottom: 88px;
 
@@ -322,7 +323,7 @@ export const HomeStyle = styled.main`
     align-items: center;
     width: 643px;
     height: 278px;
-    background-image: url('src/assets/background_about_us.png');
+    background-image: url(${background_about_us});
     background-position: top;
     background-repeat: no-repeat;
     margin: 0 auto 64px auto;

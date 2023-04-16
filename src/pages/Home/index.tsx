@@ -12,6 +12,18 @@ import CardAthlete from '../../components/CardAthlete'
 import CardBlog from '../../components/CardBlog'
 import CardObjective from '../../components/CardObjective'
 import CardFreightCashback from '../../components/CardFreightCashback'
+import athlete1 from '../../assets/athlete1.png'
+import athlete2 from '../../assets/athlete2.png'
+import athlete3 from '../../assets/athlete3.png'
+import blog1 from '../../assets/blog1.png'
+import blog2 from '../../assets/blog2.png'
+import blog3 from '../../assets/blog3.png'
+import objective1 from '../../assets/objective1.jpeg'
+import objective2 from '../../assets/objective2.jpeg'
+import objective3 from '../../assets/objective3.jpeg'
+import objective4 from '../../assets/objective4.jpeg'
+import packageBox from '../../assets/package.png'
+import dollar from '../../assets/dollar.png'
 
 const Home = () => {
   return (
@@ -70,9 +82,9 @@ const Home = () => {
 
           <ul className='list-athletes'>
             <ButtonLeft top='135px' left='-62px' />
-            <CardAthlete img='src/assets/athlete1.png' />
-            <CardAthlete img='src/assets/athlete2.png' />
-            <CardAthlete img='src/assets/athlete3.png' />
+            <CardAthlete img={athlete1} />
+            <CardAthlete img={athlete2} />
+            <CardAthlete img={athlete3} />
             <ButtonRight top='135px' right='-62px' />
           </ul>
 
@@ -109,9 +121,9 @@ const Home = () => {
 
           <ul className='list-articles-blog'>
             <ButtonLeft top='175px' left='40px' />
-            <CardBlog img='src/assets/blog1.png' />
-            <CardBlog img='src/assets/blog2.png' />
-            <CardBlog img='src/assets/blog3.png' />
+            <CardBlog img={blog1} />
+            <CardBlog img={blog2} />
+            <CardBlog img={blog3} />
             <ButtonRight top='175px' right='40px' />
           </ul>
         </section>
@@ -122,26 +134,26 @@ const Home = () => {
           <ul className='list-objectives'>
             <CardObjective
               objective='ganho de masa'
-              img='src/assets/objective1.jpeg'
+              img={objective1}
             />
             <CardObjective
               objective='energia'
-              img='src/assets/objective2.jpeg'
+              img={objective2}
             />
             <CardObjective
               objective='recuperação muscular'
-              img='src/assets/objective3.jpeg'
+              img={objective3}
             />
             <CardObjective
               objective='emagrecimento'
-              img='src/assets/objective4.jpeg'
+              img={objective4}
             />
           </ul>
         </section>
 
         <div className='freight-cashback'>
           <CardFreightCashback
-            img='src/assets/package.png'
+            img={packageBox}
             title='garanto o'
             highlight='frete grátis'
             textLink='consulte'
@@ -149,7 +161,7 @@ const Home = () => {
           />
 
           <CardFreightCashback
-            img='src/assets/dollar.png'
+            img={dollar}
             title='seu dinheiro'
             highlight='de volta'
             textLink='entenda'
